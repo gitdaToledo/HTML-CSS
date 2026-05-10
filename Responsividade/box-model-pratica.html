@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+      <style>
+          #box-level {
+                background-color: rgb(209, 151, 80);
+                width: 250px;
+                /*largura da caixa*/
+                height: 250px;
+                /*altura da caixa*/
+                border: 10px solid black;
+                /*configurações de borda*/
+                /*estilos de borda*/
+                padding: 10px;
+                /*espaçamento entre o conteúdo e a borda*/
+                text-align: center;
+                /*alinhamento do texto dentro da caixa*/
+                margin: auto; /*centraliza caixa no meio horizontalmente*/
+                outline: 10px groove rgb(255, 0, 0) ;
+                /*outline é uma borda que fica fora da borda da caixa, não afeta o tamanho da caixa*/
+            }
+
+            #inline-level {
+                background-color: rgb(168, 213, 172);
+                color: black;
+                border: 3px solid black;
+                /*configurações de borda*/
+                border-style: dashed;
+                /*estilos de borda*/
+                padding: 24px;
+                text-decoration: none;
+                /*remove o sublinhado do link*/
+             
+                
+            }
+      </style>
+</head>
+
+<body>
+        <h1 id="box-level">box-level</h1>
+<br><br><br>
+        <a href="#" id="inline-level">inline-level</a>
+</body>
+</html>

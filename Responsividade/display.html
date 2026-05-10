@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de display</title>
+
+    <style>
+.block, .inline, .inline-block, .flex, .grid {
+    background-color: red;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.card{
+    background-color: yellow;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.block {
+    display: block;
+}
+
+.flex{
+    display: flex;
+}
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+}
+.grid{
+    display: grid;
+}
+    </style>
+
+</head>
+<body>
+
+<div class="block">
+<div class="card">
+    <p>display: block; - elemento ocupa a alinha inteira e o proximo elemento vai para linha de baixo </p>
+</div>
+</div>
+
+<br>
+
+<div class="flex">
+    <div class="card">
+<p>display: flex; - transforma o elemento em container flexivel facilitando o alinhamento</p>
+</div>
+</div>
+
+<br>
+
+<div class="inline">
+     <div class="card">
+<p>display: inline; - elementos de um mesmo grupo ficam lado a lado (não aceita width e heigth)</p>
+</div>
+</div>
+
+<br>
+
+<div class="inline-block">
+     <div class="card">
+<p>display: inline-block; - elementos de um mesmo grupo ficam lado a lado (aceita width e heigth)</p>
+</div>
+</div>
+
+<br>
+
+<div class="grid">
+     <div class="card">
+<p>display: grid; - cria um sistema de grades com linhas e colunas</p>
+</div>
+</div>
+    
+</body>
+</html>

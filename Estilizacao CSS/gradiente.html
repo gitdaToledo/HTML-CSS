@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degrade</title>
+
+    <style>
+        *{ /*Seletor universal do CSS*/
+            text-align: center;
+        }
+
+        .card{
+            display:block;
+            width:300px;
+            height: 300px;
+            border-radius: 8px;
+            margin:auto;
+        }
+
+        /*background-image: linear-gradient(direção do degrade, cor1, cor2)*/
+
+        #linear-gradient{
+            background-image: linear-gradient(to right, rgb(242, 2, 42), rgb(235, 143, 143));
+        }
+
+        /*backgrond-image: radial-gradient(cor1(centro), cor2(bordas)*/
+
+        #radial-gradient{
+background-image: radial-gradient(rgb(166, 4, 147), rgb(246, 237, 246))
+        }
+
+    </style>
+</head>
+<body>
+<h1>radial-gradient</h1>
+    <div class="card" id="radial-gradient"></div>
+
+    <br><br>
+<h1>linear-gradient</h1>
+<p>to right</p>
+    <div class="card" id="linear-gradient"></div>
+    
+</body>
+</html>

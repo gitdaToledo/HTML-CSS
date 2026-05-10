@@ -1,0 +1,120 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+
+
+body{
+    margin: 0;
+}
+
+header{
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 0;
+   
+}
+
+header > h1{
+     font-family: "Passion One", sans-serif;
+     font-size: 8vw;
+}
+
+@media(min-width: 600px){
+     header > h1{
+     font-size: 8vw;
+     margin-bottom: 0; 
+     margin-top: 50px;
+     }
+     header > p {
+        font-size: 3vw;
+        margin-top: 10px;
+     }
+   
+     article{
+        font-size: 8vw;
+     }
+    
+  }
+
+
+header > p {
+ font-family: "Google Sans", sans-serif;
+ font-size: 2vw;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+ a:hover{
+text-decoration: underline;
+}
+
+article{
+    font-family: "Sriracha", cursive;
+    text-align: left;
+    margin: 25px;
+    font-size: 25px;
+}
+
+article.fundo-image{
+     background-color: rgba(0, 0, 0, 0.638);
+     padding: 15px;
+     width: auto;
+     border-radius: 8px;
+     color: white;
+}
+
+@media(max-width: 599px){
+  article.fundo-image{
+    display: block;
+    margin:auto;
+  }
+     header > h1{
+     font-size: 9vw;
+     margin-bottom: 0; 
+     margin-top: 50px;
+     }
+     header > p {
+        font-size: 20px;
+        margin-top: 10px;
+     }
+
+      article{
+        font-size: 5vw;
+     }
+  }
+
+
+section.fundo-image{
+   height: auto;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   padding: 20px;
+   display:block;
+   background-size: cover ;
+   box-shadow: inset 0 4px 11px rgba(0, 0, 0, 0.751);
+
+}
+
+section#fundo-flor{
+    background-image: url(https://i.pinimg.com/736x/50/6b/36/506b362f349a113c50b56871f283f599.jpg);
+    
+}
+
+section#fundo-escrita{
+    background-image: url(https://i.pinimg.com/736x/27/e0/1d/27e01d42522e175191f16fe5eae21347.jpg)
+}
+
+footer{
+    display: block;
+    background-color: black;
+    padding:  10px;
+    color: white;
+    text-align: center;
+}

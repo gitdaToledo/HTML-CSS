@@ -1,0 +1,39 @@
+ body {
+     background-color: rgb(55, 55, 55);
+ }
+
+ iframe {
+    display:flex;
+    margin:auto;
+    width: 620px;
+    height: 350px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+ }
+
+a {
+    color:white;
+    font-size: 18px;
+    text-decoration: none;
+    margin:auto;
+    display: flex;
+}
+
+a:hover{
+ color:rgb(184, 180, 180);
+}
+
+p {
+    text-align: center;
+    color:white;
+}
+
+i {
+    display:flex;
+    margin:auto;
+    font-size: 30px;
+    margin-top: 20px;
+    border:1px solid white;
+    padding: 12px;
+    border-radius: 50%;
+}

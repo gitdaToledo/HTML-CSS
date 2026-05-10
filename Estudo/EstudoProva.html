@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo Prova</title>
+
+    <style>
+        body {
+            background-image: linear-gradient(to right, rgb(235, 128, 146), rgb(246, 206, 206))
+        }
+        
+        h2{
+            text-align: center;
+        }
+
+        img, iframe{
+            display: flex;
+            margin:auto;
+            width: 500px;
+            border-radius: 10px;
+        }
+
+        a{
+            text-decoration: none;
+            color:black;
+            border: 1px, solid;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        nav{
+            background-color: white;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        tr, td{
+            text-align: center;
+            padding: 10px;
+            margin:auto;
+        }
+
+
+        .listas{
+            background-color: white;
+            display:inline-block;
+            margin:auto;
+            padding: 10px;
+            border-radius: 8px;
+            border: 2px solid ;
+        }
+
+        table{
+            background-color: white;
+            display:flex;
+            margin:auto;
+            padding: 10px;
+            border-radius: 8px;
+            border: 2px solid ;
+            width: 450px;
+        }
+
+        
+    </style>
+
+</head>
+
+<body>
+<nav>
+    <!--semantica tag navegação-->
+<a href="#menu">Menu</a>
+<a href="#sobre">Sobre</a>
+<a href="#contato">Contato</a>
+<a href="#reserva">Reserva</a>
+<a href="formularioEstudo.html">Login</a>
+</nav>
+
+<br><br>
+
+<img src="https://i.pinimg.com/webp/1200x/75/b9/f7/75b9f7f3890e8c2a169fc392589f2635.webp" alt="Hello Kitty"/>
+
+<br><br>
+
+<section class="listas">
+    
+        <h2>Lista não ordenada</h2>
+        <ul type="circle">
+            <li>Algoritmos e Programação</li>
+            <li>História da Ciência e Tecnologia</li>
+            <li>Desenvolvimento WEB</li>
+            <li>Matemática</li>
+            <li>Arquitetura de computadores</li>
+            <li>Programação Estruturada</li>
+        </ul>
+    </section>
+
+    <section class="listas">
+
+        <h2>Lista ordenada</h2>
+        <ol type="a">
+            <li>Algoritmos e Programação</li>
+            <li>História da Ciência e Tecnologia</li>
+            <li>Desenvolvimento WEB</li>
+            <li>Matemática</li>
+            <li>Arquitetura de computadores</li>
+            <li>Programação Estruturada</li>
+        </ol>
+
+    </section>
+
+    <br><br>
+
+    <h2>Tabela</h2>
+
+    <section>
+<table border="1">
+    <tr>
+        <th>Horário</th>
+        <th>Segunda</th>
+        <th>Terça</th>
+        <th>Quarta</th>
+        <th>Quinta</th>
+    </tr>
+
+    <tr>
+        <td>19:00 - 19:45</td>
+        <td rowspan="4">APRG</td>
+        <td rowspan="2">HCTC</td>
+        <td rowspan="4">FMAT</td>
+        <td rowspan="3">PRESS</td>
+    </tr>
+
+    <tr>
+        <td>19:45 - 20:30</td>
+    </tr>
+
+    <tr>
+        <td>20:30 - 21:15</td>
+        <td rowspan="3">DWEB</td>
+    </tr>
+
+    <tr>
+        <td>21:35 - 22:15</td>
+        <td rowspan="2">ARQC</td>
+    </tr>
+    
+    <tr>
+        <td>22:15 - 23:00</td>
+        <td> --- </td>
+        <td>DWEB</td>
+    </tr>
+
+    <tr>
+        <td colspan="5">Usando colspan para ocupar a linha inteira</td>
+    </tr>
+</table>
+    </section>
+
+    <h2>Localização com iframe</h2>
+
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14587.622461113157!2d-46.41736902439587!3d-23.928396089271306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1bb29bde4aeb%3A0x8b65b60dcd73ad02!2sInstituto%20Federal%20de%20Educa%C3%A7%C3%A3o%2C%20Ci%C3%AAncia%20e%20Tecnologia%20de%20S%C3%A3o%20Paulo%2C%20Campus%20Cubat%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1777851727676!5m2!1spt-BR!2sbr" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<br>
+<h2>Site com iframe</h2>
+   <iframe src="https://www.consesp.com.br/2026/01/28/ima-informatica-de-municipios-associados-s-a-concurso-publico-001-2026/" width="400" height="400"></iframe>
+
+</body>
+</html>

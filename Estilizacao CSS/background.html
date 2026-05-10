@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            text-align: center;
+            background-image: url(https://i.pinimg.com/736x/6d/b6/35/6db6353f0ce3e07de89d88926a3e9867.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .card{
+            display: inline-block;
+            margin: auto;
+            margin-bottom: 30px;
+            width: 300px;
+            height:300px;
+            border-radius: 10px;
+            border: 1px solid black;
+            background-color: azure;
+        }
+
+         .position{
+            display: inline-block;
+            margin: auto;
+            margin-bottom: 30px;
+            width: 400px;
+            height:300px;
+            border-radius: 10px;
+            border: 1px solid black;
+            background-color: azure;
+        }
+
+          p > .position{
+            display: inline;
+        }
+
+        div#plt{
+            background-image: url(https://i.pinimg.com/736x/50/82/d3/5082d3a492942004fb9621e991dc9999.jpg);
+            background-position: left top;
+             background-size: 100px 100px;
+            background-repeat: no-repeat;
+        }
+
+          div#pct{
+            background-image: url(https://i.pinimg.com/736x/50/82/d3/5082d3a492942004fb9621e991dc9999.jpg);
+            background-position: center top;
+             background-size: 100px 100px;
+            background-repeat: no-repeat;
+        }
+
+          div#prt{
+            background-image: url(https://i.pinimg.com/736x/50/82/d3/5082d3a492942004fb9621e991dc9999.jpg);
+            background-position: right top;
+             background-size: 100px 100px;
+            background-repeat: no-repeat;
+        }
+
+         div#plc{
+            background-image: url(https://i.pinimg.com/736x/50/82/d3/5082d3a492942004fb9621e991dc9999.jpg);
+            background-position: left center;
+             background-size: 100px 100px;
+            background-repeat: no-repeat;
+        }
+
+         div#pcc{
+            background-image: url(https://i.pinimg.com/736x/50/82/d3/5082d3a492942004fb9621e991dc9999.jpg);
+            background-position: center center;
+             background-size: 100px 100px;
+            background-repeat: no-repeat;
+        }
+
+         div#prc{
+            background-image: url(https://i.pinimg.com/736x/50/82/d3/5082d3a492942004fb9621e991dc9999.jpg);
+            background-position: right center;
+             background-size: 100px 100px;
+            background-repeat: no-repeat;
+        }
+
+         div#plb{
+            background-image: url(https://i.pinimg.com/736x/50/82/d3/5082d3a492942004fb9621e991dc9999.jpg);
+            background-position: left bottom;
+            background-size: 100px 100px;
+            background-repeat: no-repeat;
+        }
+
+         div#pcb{
+            background-image: url(https://i.pinimg.com/736x/50/82/d3/5082d3a492942004fb9621e991dc9999.jpg);
+            background-position: center bottom;
+            background-size: 100px 100px;
+            background-repeat: no-repeat;
+        }
+
+         div#prb{
+            background-image: url(https://i.pinimg.com/736x/50/82/d3/5082d3a492942004fb9621e991dc9999.jpg);
+            background-position: right bottom;
+            background-size: 100px 100px;
+            background-repeat: no-repeat;
+        }
+
+
+        #imagem{
+            background-image: url(https://i.pinimg.com/736x/06/5e/aa/065eaac64cbf36c9e357170471b3fd4f.jpg);
+            background-size: 300px 300px;
+        }
+
+        #repeat{
+            background-image: url(https://i.pinimg.com/736x/50/82/d3/5082d3a492942004fb9621e991dc9999.jpg);
+            background-repeat: repeat; /*valor padrão*/
+            background-size: 100px 100px;
+        }
+
+    #no-repeat{
+            background-image: url(https://i.pinimg.com/736x/50/82/d3/5082d3a492942004fb9621e991dc9999.jpg);
+            background-repeat: no-repeat; /*valor padrão*/
+           background-size: 300px 300px;
+        }
+
+        #repeat-x{
+            background-image: url(https://i.pinimg.com/736x/50/82/d3/5082d3a492942004fb9621e991dc9999.jpg);
+            background-repeat: repeat-x; /*valor padrão*/
+            background-size: 100px 100px;
+        }
+
+ #repeat-y{
+            background-image: url(https://i.pinimg.com/736x/50/82/d3/5082d3a492942004fb9621e991dc9999.jpg);
+            background-repeat: repeat-y; /*valor padrão*/
+            background-size: 100px 100px;
+        }
+
+       
+        
+    </style>
+</head>
+<body>
+    <h1>Propriedade background-image</h1>
+<div class="card" id="imagem"></div>
+
+<br>
+
+<h1>Propriedade background-repeat</h1>
+<p>repeat - repete a imagem para caber no container</p>
+<p>no-repeat - não repete a imagem</p>
+<p>repeat-x - só repete no eixo x (horizontal)</p>
+<p>repeat-y - só repete no eixo y (vertical)</p>
+<div class="card" id="repeat"></div>
+<div class="card" id="no-repeat"></div>
+<div class="card" id="repeat-x"></div>
+<div class="card" id="repeat-y"></div>
+
+<br>
+
+<h1>Propriedade background-position</h1>
+<p>estrutura background-position: left/center/right(valor da posição horizontal)  top/center/bottom (valor de posição verical)</p>
+
+<p>left top - left center - left bottom</p>
+<div class="position" id="plt"></div>
+<div class="position" id="plc"></div>
+<div class="position" id="plb"></div>
+
+<br>
+
+<p>center top - center center - center bottom</p>
+<div class="position" id="pct"></div>
+<div class="position" id="pcc"></div>
+<div class="position" id="pcb"></div>
+
+<br>
+
+<p>right top - right center - right bottom</p>
+<div class="position" id="prt"></div>
+<div class="position" id="prc"></div>
+<div class="position" id="prb"></div>
+
+<br>
+<h1>Propriedade background-size</h1>
+<p>defini o tamanho da imagem de fundo</p>
+<p>background-size: cover - deixa a imagem flexível a diferentes tipos de tela</p>
+<p>background-size: contain - o fundo fica com bordas pretas quando a imagem não se adequa a tela</p>
+<br>
+
+<h1>Propriedade background-attachment</h1>
+<a href="background-attachment.html">Acesse aqui um exemplo</a>
+
+</body>
+</html>

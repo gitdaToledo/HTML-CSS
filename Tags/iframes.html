@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+
+    <style>
+h1, h2, p, ul {
+    text-align: center;
+}
+
+iframe {
+    display: flex;
+    margin: auto;
+}
+    </style>
+</head>
+
+<body>
+    <h1>Iframes</h1>
+    
+    <br><hr>
+
+  <h2>iFrame com arquivos locais</h2>
+  <p>Saiba mais sobre links em HTML</p>
+  <iframe src="links.html" frameborder="0" width="500px" height="500px"></iframe>
+
+<br><hr><br>
+
+  <h2>Tratamento de Erros</h2>
+  <p>Caso o navegador do usuário não seja compatível com iFrames. Colocar uma mensagem dentro da tag iframe</p>
+  <iframe src="" frameborder="1" width="500px" height="200px">
+<p>Seu navegador não é compatível</p>
+  </iframe>
+
+<br><hr><br>
+
+
+    <h2>Navegandoção com iFrame (vincular <code>target="frame"</code> do link com <code> name="frame"</code> no iframe)</h2>
+
+
+<ul type="none">
+    <li><a href="listas.html" target="frame">Listas em HTMl</a></li>
+    <li><a href="estrutura semantica.html" target="frame">Estruturas Semânticas</a></li>
+    <li><a href="formatacao.html" target="frame">Formatação</a></li>
+</ul>
+<!--Com o atributo srcdoc é possível inserir conteudo com html dentro do iFrame-->
+
+<!--Ou utilizar um arquivo html pronto no src para deixar como capa quando não houver navegação no iframe (gostei mais)-->
+
+<iframe srcdoc="<h1>Escolha uma das opções acima</h1><p>dá para inserir imagens tambem</p><br><img src='https://i.pinimg.com/736x/50/82/d3/5082d3a492942004fb9621e991dc9999.jpg' width=300>" name="frame" width="600px" height="500px">
+</iframe>
+
+</body>
+</html>

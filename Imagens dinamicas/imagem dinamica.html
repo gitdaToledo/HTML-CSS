@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Imagens Dinâmicas - HTML</h1>
+    <p>Ao deixar as imagens de forma dinâmica, elas se adaptam ao tamanho da tela do dispositivo em que são exibidas.</p>
+
+    <picture>
+
+        <!--O ideal é ser a mesma imagem em tamanhos diferentes-->
+
+        <source media="(max-width:750px )" srcset="./img-p.jpg" type="image/jpg"> <!--Enquanto a largura da tela for menor ou igual a 750px, use esta imagem pequena-->
+
+        <source media="(max-width: 1050px )" srcset="./img-m.jpg" type="image/jpg"> <!--Enquanto a largura da tela for menor ou igual a 1050px, use esta imagem média-->
+
+         <!--Se a largura da tela for maior que 1050px, use esta imagem grande-->
+        <img style="margin: auto; display: block;" src="./img-g.jpg">
+
+    </picture>
+    
+</body>
+</html>

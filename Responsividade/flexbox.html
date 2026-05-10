@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+<style>
+    body{
+        background-color: rgb(226, 140, 153);
+        color:white;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    li{
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+
+/*Classes do container principal*/
+
+    .direction-row, .flex-nowrap-row{
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(223, 203, 176);
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+     .direction-column, .flex-nowrap-column {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(223, 203, 176);
+        padding: 10px;
+        border-radius: 5px;
+    }
+        .direction-row-reverse{
+            display: flex;
+            flex-direction: row-reverse;
+            background-color: rgb(223, 203, 176);
+            padding: 10px;
+            border-radius: 5px;
+        }
+    
+        .direction-column-reverse{
+            display: flex;
+            flex-direction: column-reverse;
+            background-color: rgb(223, 203, 176);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .flex-wrap-row{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-color: rgb(223, 203, 176);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+         .flex-wrap-column{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            background-color: rgb(223, 203, 176);
+            padding: 10px;
+            border-radius: 5px;
+        }
+            .flex-wrap-reverse-row{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap-reverse;
+                background-color: rgb(223, 203, 176);
+                padding: 10px;
+                border-radius: 5px;
+            }
+    
+            .flex-wrap-reverse-column{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap-reverse;
+                background-color: rgb(223, 203, 176);
+                padding: 10px;
+                border-radius: 5px;
+            }
+
+            .justify-flex-start{
+                display: flex;
+                justify-content: flex-start;
+                background-color: rgb(223, 203, 176);
+                padding: 10px;
+                border-radius: 5px;              
+            }
+
+              .justify-flex-end{
+                display: flex;
+                justify-content: flex-end;
+                background-color: rgb(223, 203, 176);
+                padding: 10px;
+                border-radius: 5px;              
+            }
+
+                .justify-center{
+                display: flex;
+                justify-content: center;
+                background-color: rgb(223, 203, 176);
+                padding: 10px;
+                border-radius: 5px;              
+            }
+            .justify-space-between{
+                display: flex;
+                justify-content: space-between;
+                background-color: rgb(223, 203, 176);
+                padding: 10px;
+                border-radius: 5px;              
+            }
+
+            .justify-space-around{
+                display: flex;
+                justify-content: space-around;
+                background-color: rgb(223, 203, 176);
+                padding: 10px;
+                border-radius: 5px;              
+            }
+
+             .justify-space-evenly{
+                display: flex;
+                justify-content: space-evenly;
+                background-color: rgb(223, 203, 176);
+                padding: 10px;
+                border-radius: 5px;              
+            }
+
+            .align-items-stretch{
+                display: flex;
+                align-items: stretch;
+                background-color: rgb(223, 203, 176);
+                padding: 10px;
+                border-radius: 5px;
+                height: 250px;
+            }
+
+            .align-items-flex-start{
+                display: flex;
+                align-items: flex-start;
+                background-color: rgb(223, 203, 176);
+                padding: 10px;
+                border-radius: 5px;
+                height: 250px;
+            }
+
+            .align-items-flex-end{
+                display: flex;
+                align-items: flex-end;
+                background-color: rgb(223, 203, 176);
+                padding: 10px;
+                border-radius: 5px;
+                height: 250px;
+            }
+
+            .align-items-center{
+                display: flex;
+                align-items: center;
+                background-color: rgb(223, 203, 176);
+                padding: 10px;
+                border-radius: 5px;
+                height: 250px;
+            }
+
+       /*Classes filhas*/ 
+.item-direction-row, .item-direction-column, .item-direction-row-reverse, .item-direction-column-reverse{
+        background-color: lightpink;
+        border: 1px solid black;
+        border-radius: 3px;
+        flex: auto;
+        text-align: center;
+        margin:3px;    
+    }
+    .item-flex-nowrap{
+        background-color: lightpink;
+        border: 1px solid black;
+        border-radius: 3px;
+        flex: auto;
+        text-align: center;
+        margin:3px;   
+    }
+    .item-flex-wrap{
+        background-color: lightpink;
+        border: 1px solid black;
+        border-radius: 3px;
+        flex: auto;
+        text-align: center;
+        margin:3px;  
+        padding: 3px;
+    }
+
+    .item-flex-wrap-reverse{
+        background-color: lightpink;
+        border: 1px solid black;
+        border-radius: 3px;
+        flex: auto;
+        text-align: center;
+        margin:3px;  
+        padding: 3px;
+    }
+
+    .item-justify-flex-start, .item-justify-flex-end, .item-justify-center, .item-justify-space-between, .item-justify-space-around, .item-justify-space-evenly{
+        background-color: lightpink;
+        width:70px;
+            height:70px;
+            padding:10px;
+            border:1px solid black;
+            border-radius:8px;
+            margin:3px;
+            text-align: center;
+            align-content: center;
+    }
+
+    .item-align-items-stretch, .item-align-items-flex-start, .item-align-items-flex-end, .item-align-items-center{
+        background-color: lightpink;
+        width:70px;
+        padding:10px;
+        border:1px solid black;
+        border-radius:8px;
+        margin:3px;
+        text-align: center;
+        align-content: center; 
+    }
+
+   
+</style>
+
+
+
+</head>
+<body>
+    <h1 style="text-align: center;">Flexbox - Modelo de Layout Flexível</h1>
+    <hr>
+    <h3>Características:</h3>
+    <p>- trabalha com caixas flexíveis</p>
+    <p>- permite que os elementos de uma caixa se adaptem ao espaço disponível</p>
+<hr>
+<h3>Entendendo o conceito de eixos em Flexbox:</h3>
+<p>- Eixo principal (main axis): é a direção em que os itens flexíveis são organizados. Pode ser horizontal (row) ou vertical (column).</p>
+<p>- Eixo transversal (cross axis): é a direção perpendicular ao eixo principal. Se o eixo principal for horizontal, o eixo transversal será vertical, e vice-versa.</p>
+<hr>
+<h3>Propriedades do container flexível:</h3>
+<ul type="square">
+    <li>display: flex;</li>
+    <p>- ativa o Flexbox para o container</p>
+
+    <li>flex-direction: define a direção dos itens </li>
+
+   <p>- row → linha (padrão) </p>
+<div class="direction-row">
+<div class="item-direction-row">1</div>
+<div class="item-direction-row">2</div>
+<div class="item-direction-row">3</div>
+<div class="item-direction-row">4</div>
+</div>
+
+   <p>- column → coluna </p>
+   <div class="direction-column">
+<div class="item-direction-column">1</div>
+<div class="item-direction-column">2</div>
+<div class="item-direction-column">3</div>
+<div class="item-direction-column">4</div>
+</div>
+
+   <p>- row-reverse → linha invertida </p>
+      <div class="direction-row-reverse">
+<div class="item-direction-row-reverse">1</div>
+<div class="item-direction-row-reverse">2</div>
+<div class="item-direction-row-reverse">3</div>
+<div class="item-direction-row-reverse">4</div>
+</div>
+
+   <p>- column-reverse → coluna invertida</p>
+        <div class="direction-column-reverse">
+<div class="item-direction-column-reverse">1</div>
+<div class="item-direction-column-reverse">2</div>
+<div class="item-direction-column-reverse">3</div>
+<div class="item-direction-column-reverse">4</div>
+</div>
+<br>
+<hr>
+   <li><h3>Eixos e Direções </h3></li>
+   <p>No flexbox existem dois eixos principais: </p>
+   <p>o eixo principal (main axis) -> definido pela propriedade flex-direction</p>
+    <p>eixo transversal (cross axis) -> perpendicular ao eixo principal</p>
+
+    <li>flex-wrap: define como os itens são agrupados ao diminuir o espaço disponível. Este atibuto deve ser colocado na classe container!</li>
+    
+    <p>- nowrap (padrão - não quebra) </p>
+    <div class="flex-nowrap-row">
+<div class="item-flex-nowrap">Exemplo de Item 1</div>
+<div class="item-flex-nowrap">Exemplo de Item 2</div>
+<div class="item-flex-nowrap">Exemplo de Item 3</div>
+<div class="item-flex-nowrap">Exemplo de Item 4</div>
+<div class="item-flex-nowrap">Exemplo de Item 5</div>  
+<div class="item-flex-nowrap">Exemplo de Item 6</div>    
+<div class="item-flex-nowrap">Exemplo de Item 7</div>
+<div class="item-flex-nowrap">Exemplo de Item 8</div>  
+    </div>
+<br><br>
+    <div class="flex-nowrap-column">
+<div class="item-flex-nowrap">Exemplo de Item 1</div>
+<div class="item-flex-nowrap">Exemplo de Item 2</div>
+<div class="item-flex-nowrap">Exemplo de Item 3</div>
+<div class="item-flex-nowrap">Exemplo de Item 4</div>
+<div class="item-flex-nowrap">Exemplo de Item 5</div>
+<div class="item-flex-nowrap">Exemplo de Item 6</div>   
+<div class="item-flex-nowrap">Exemplo de Item 7</div>
+<div class="item-flex-nowrap">Exemplo de Item 8</div>     
+    </div>
+
+    <p>- wrap (quebra para o fim no sentido do eixo transversal) </p>
+      <div class="flex-wrap-row">
+<div class="item-flex-wrap">Exemplo de Item 1</div>
+<div class="item-flex-wrap">Exemplo de Item 2</div>
+<div class="item-flex-wrap">Exemplo de Item 3</div>
+<div class="item-flex-wrap">Exemplo de Item 4</div>
+<div class="item-flex-wrap">Exemplo de Item 5</div>  
+<div class="item-flex-wrap">Exemplo de Item 6</div>  
+<div class="item-flex-wrap">Exemplo de Item 7</div>
+<div class="item-flex-wrap">Exemplo de Item 8</div>    
+    </div>
+<br><br>
+    <div class="flex-wrap-column">
+<div class="item-flex-wrap">Exemplo de Item 1</div>
+<div class="item-flex-wrap">Exemplo de Item 2</div>
+<div class="item-flex-wrap">Exemplo de Item 3</div>
+<div class="item-flex-wrap">Exemplo de Item 4</div>
+<div class="item-flex-wrap">Exemplo de Item 5</div>
+<div class="item-flex-wrap">Exemplo de Item 6</div>     
+<div class="item-flex-wrap">Exemplo de Item 7</div>
+<div class="item-flex-wrap">Exemplo de Item 8</div>   
+    </div>
+
+    <p>- wrap-reverse (quebra para o inicio no sentido do eixo transversal) </p>
+  <div class="flex-wrap-reverse-row">
+<div class="item-flex-wrap-reverse">Exemplo de Item 1</div>
+<div class="item-flex-wrap-reverse">Exemplo de Item 2</div>
+<div class="item-flex-wrap-reverse">Exemplo de Item 3</div>
+<div class="item-flex-wrap-reverse">Exemplo de Item 4</div>
+<div class="item-flex-wrap-reverse">Exemplo de Item 5</div>  
+<div class="item-flex-wrap-reverse">Exemplo de Item 6</div>  
+<div class="item-flex-wrap-reverse">Exemplo de Item 7</div>
+<div class="item-flex-wrap-reverse">Exemplo de Item 8</div>    
+    </div>
+<br><br>
+    <div class="flex-wrap-reverse-column">
+<div class="item-flex-wrap-reverse">Exemplo de Item 1</div>
+<div class="item-flex-wrap-reverse">Exemplo de Item 2</div>
+<div class="item-flex-wrap-reverse">Exemplo de Item 3</div>
+<div class="item-flex-wrap-reverse">Exemplo de Item 4</div>
+<div class="item-flex-wrap-reverse">Exemplo de Item 5</div>
+<div class="item-flex-wrap-reverse">Exemplo de Item 6</div>     
+<div class="item-flex-wrap-reverse">Exemplo de Item 7</div>
+<div class="item-flex-wrap-reverse">Exemplo de Item 8</div>   
+    </div>
+
+<br><hr>
+
+<h3>Alinhamento dos itens em Flexbox:</h3>
+    <li>Justify-content: alinha os itens ao longo do eixo principal. Este atibuto deve ser colocado na classe container!</li>
+
+    <h3>Classe filha <strong>NÃO </strong>pode ter flex: auto;</h3>
+
+    <p>- flex-start (padrão) → alinha os itens ao início do eixo principal</p>
+    <div class="justify-flex-start">
+<div class="item-justify-flex-start">Exemplo de Item 1</div>
+<div class="item-justify-flex-start">Exemplo de Item 2</div>
+<div class="item-justify-flex-start">Exemplo de Item 3</div>
+    </div>
+
+    <p>- flex-end → alinha os itens ao final do eixo principal</p>
+<div class="justify-flex-end">
+<div class="item-justify-flex-end">Exemplo de Item 1</div>
+<div class="item-justify-flex-end">Exemplo de Item 2</div>
+<div class="item-justify-flex-end">Exemplo de Item 3</div>
+</div>
+
+    <p>- center → alinha os itens ao centro do eixo principal</p>
+<div class="justify-center">
+<div class="item-justify-center">Exemplo de Item 1</div>
+<div class="item-justify-center">Exemplo de Item 2</div>
+<div class="item-justify-center">Exemplo de Item 3</div>
+</div>
+
+    <p>- space-between → distribui os itens com espaçamento igual entre eles</p>
+    <div class="justify-space-between">
+<div class="item-justify-space-between">Exemplo de Item 1</div>
+<div class="item-justify-space-between">Exemplo de Item 2</div>
+<div class="item-justify-space-between">Exemplo de Item 3</div>
+</div>
+
+    <p>- space-around → distribui os itens com espaçamento igual ao redor de cada item</p>
+
+    <div class="justify-space-around">
+<div class="item-justify-space-around">Exemplo de Item 1</div>
+<div class="item-justify-space-around">Exemplo de Item 2</div>
+<div class="item-justify-space-around">Exemplo de Item 3</div>
+</div>
+
+    <p>- space-evenly → distribui os itens com espaçamento igual entre eles e nas extremidades</p>
+    <div class="justify-space-evenly">
+<div class="item-justify-space-evenly">Exemplo de Item 1</div>
+<div class="item-justify-space-evenly">Exemplo de Item 2</div>
+<div class="item-justify-space-evenly">Exemplo de Item 3</div>
+</div>
+
+<br><hr>
+
+    <li>Align-items: alinha os itens ao longo do eixo transversal</li>
+
+    <h3>Classe filha <strong>NÃO </strong>pode ter height definida</h3>
+
+    <p>- stretch (padrão) → estica os itens para preencher o container no eixo transversal</p>
+    <div class="align-items-stretch">
+    <div class="item-align-items-stretch">Exemplo de Item 1</div>
+    <div class="item-align-items-stretch">Exemplo de Item 2</div>
+    <div class="item-align-items-stretch">Exemplo de Item 3</div>    
+    </div>    
+
+    <p>- flex-start → alinha os itens ao início do eixo transversal</p>
+    <div class="align-items-flex-start">
+    <div class="item-align-items-flex-start">Exemplo de Item 1</div>
+    <div class="item-align-items-flex-start">Exemplo de Item 2</div>
+    <div class="item-align-items-flex-start">Exemplo de Item 3</div>    
+    </div>
+
+    <p>- flex-end → alinha os itens ao final do eixo transversal</p>
+    <div class="align-items-flex-end">
+    <div class="item-align-items-flex-end">Exemplo de Item 1</div>
+    <div class="item-align-items-flex-end">Exemplo de Item 2</div>
+    <div class="item-align-items-flex-end">Exemplo de Item 3</div>    
+    </div>
+
+    <p>- center → alinha os itens ao centro do eixo transversal</p>
+<div class="align-items-center">
+    <div class="item-align-items-center">Exemplo de Item 1</div>
+    <div class="item-align-items-center">Exemplo de Item 2</div>
+    <div class="item-align-items-center">Exemplo de Item 3</div>    
+    </div>
+
+    <li>Align-content: alinha as linhas de itens quando há espaço extra no eixo transversal.</li>
+
+
+
+
+
+</ul>
+</body>
+</html>

@@ -1,0 +1,3 @@
+- segurar alt e clicar nas tags ajuda a editar varias de uma vez
+
+- seleciona um trecho, clica em ctrl + shift + p seleciona envelopar e digita a tag que vc quer envelopar o trecho

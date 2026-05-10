@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: #1B181A;
+            color: #FFD1E2;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color:#FFD1E2;
+            text-decoration: none;
+        }
+
+        /*pseudoclasse : */
+
+        a:visited{ /*caso o link for visitado */
+            color:white;
+        }
+
+        a:hover{ /*caso passe o mouse por cima*/
+            text-decoration: underline;
+        }
+
+        a:active{ /*caso clique e segure*/
+        color:aquamarine;
+        }
+
+        /*pseudoelemento :: */
+
+        a::before{ /*antes todos os elementos da tag a */
+            content: '★ ';
+            color:#FFD1E2;
+        }
+        a::after{ /*depois de todos os elementos da tag a */
+            content: ' ★';
+        }
+    </style>
+</head>
+<body>
+    <h1>Estilizando links com pseudoelementos</h1>
+
+    <ul type="none">
+        <li><a href="https://github.com/gitdaToledo">Acesse meu github</a></li>
+        <li><a href="https://www.youtube.com/watch?v=vMlrcOVr7po&list=PLkaWozYb0kV-WYIQhL_8GdjKwBb0G0ad6&index=3">Acesse o vídeo dos pseudoelementos</a></li>
+        
+    </ul>
+</body>
+</html>

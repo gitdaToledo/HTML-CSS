@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Prática 1</title>
+
+    <style>
+        .container {
+            background-color:rgb(223, 203, 176);
+            display: flex; /* Ativa o Flexbox para o container */
+            flex-direction: row; /* Define a direção dos itens (pode ser row, column, row-reverse, column-reverse) */
+            padding: 10px;
+            border-radius: 5px;
+            flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se não houver espaço suficiente */
+           
+        }
+
+        .item {
+            background-color: lightpink;
+            border: 1px solid black;
+            flex: auto; /* Permite que os itens cresçam para preencher o espaço disponível */
+            text-align: center;
+            margin:3px;    
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2>Usando Flexbox:</h2>
+    <!-- Classe pai-->
+    <div class="container">
+        <!-- Classes filho-->
+        <div class="item">Exemplo de Item 1</div>
+        <div class="item">Exemplo de Item 2</div>
+        <div class="item">Exemplo de Item 3</div>
+        <div class="item">Exemplo de Item 4</div>
+        <div class="item">Exemplo de Item 5</div>
+        <div class="item">Exemplo de Item 6</div>
+        <div class="item">Exemplo de Item 7</div>
+        <div class="item">Exemplo de Item 8</div>    
+    </div>
+<br>
+    <hr>
+<h2>Sem uso de Flexbox:</h2>
+<div style="background-color: rgb(223, 203, 176); padding: 10px;">
+    <div style="background-color: lightpink; border: 1px solid black; text-align: center; margin: 5px;">Item 1</div>
+    <div style="background-color: lightpink; border: 1px solid black; text-align: center; margin: 5px;">Item 2</div>
+    <div style="background-color: lightpink; border: 1px solid black; text-align: center; margin: 5px;">Item 3</div>
+    <div style="background-color: lightpink; border: 1px solid black; text-align: center; margin: 5px;">Item 4</div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios em HTML</title>
+    <link rel="shortcut icon" href="pasta.ico" type="image/x-icon">
+</head>
+
+<style>
+    body{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+</style>
+
+<body>
+    <form method="post" action="#">
+        <h1>Formulário para estudos</h1>
+    <label>Nome Completo: </label>
+    <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo">
+    <br><br>
+    <label>Idade: </label>
+    <input type="number" name="idade" id="idade" placeholder="Digite sua idade">
+    <br><br>
+    <label>Telefone: </label>
+    <input type="tel" name="telefone" id="telefone" placeholder="Digite seu telefone">
+    <br><br>
+    <label>Email: </label>
+    <input type="email" name="email" id="email" placeholder="Digite seu email">
+    <br><br>
+    <label>Senha: </label>
+    <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+    <br><br>
+    <label>Data de Nascimento: </label>
+    <input type="date" name="nascimento" id="nascimento">
+    <br><br>
+    <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

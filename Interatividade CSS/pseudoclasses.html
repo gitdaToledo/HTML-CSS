@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasse</title>
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        div {
+            display: inline-block;
+            background-color: lightskyblue;
+            text-align: center;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            border-radius: 6px;
+            align-content: center;
+            font-size: 30px;
+        }
+
+        .div-houver:hover{
+            background-color: cornflowerblue;
+        }
+
+        .div-active:active{
+            background-color: cornflowerblue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Pseudoclasses em CSS</h1>
+
+    <h2><em>tagName</em>:hover - quando passa o mouse</h2>
+    <div class="div-houver">1</div>
+    <div class="div-houver">2</div>
+    <div class="div-houver">3</div>
+
+    <br><br><hr>
+
+    <h2><em>tagName</em>:active - aplica estilo quando clicado</h2>
+    <div class="div-active">1</div>
+    <div class="div-active">2</div>
+    <div class="div-active">3</div>
+
+
+
+</body>
+
+</html>
