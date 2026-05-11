@@ -4,11 +4,33 @@
 
 Github  desktop (M3 Cap18)
 
-- para criar um novo repósitorio basta nomear ele com o mesmo nome do diretório local e com o mesmo caminho (sem o diretório)
+- para criar um repósitorio para um arquivo existente no computador basta nomear ele com o mesmo nome do diretório local e com o mesmo caminho (sem o diretório)
 
-Gerenciar repósitorios com Github desktop
+- caso seja um repositorio novo escolha um nome qualquer e coloque onde ele deve ficar
+
+* Gerenciar repósitorios com Github desktop *
 
 M no arquivo indica alterações no arquivo que não estão salvas no repositorio
 
 - para salvar alterações é necessario fazer commits (msg que informa as alterações feitas). Adicionou a mudança no repósitorio local
   - após para atualizar o repositorio remoto (github) clica no botão Push origin (origin = refere-se ao remoto)
+
+  *Hospedagem com Github Pages (não é profissional é só para compartilhamento e dá pra usar na url)
+
+  - O repositorio deve ser publico!
+
+  1. No site do github vc entra no seu perfil e no repositorio que deseja hospedar 
+  2. Vai em Configurações e clica em Pages e habilita para criar um dominio
+
+  url criada: https://gitdatoledo.github.io/HTML-CSS/
+
+  estrutura: https://nomeUsuario.github.io/nomeRepositorio
+
+  Aqui só aparece o readme. Para acessar os exercicios basta adicionar o caminho ate ele na url. 
+  ex:
+  https://gitdatoledo.github.io/HTML-CSS/Tags/links.html
+
+
+*Limitações do Github Pages:
+- só da pra hospedar paginas html, css e javascript
+- não é profissional
