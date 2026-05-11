@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/*Estilo para tela - não influencia a impressao*/
+
+header > h1,h2, ul{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+    margin: 80px;
+}
+
+li{
+    margin-bottom: 8px;
+}
+
+
+body{
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 1em;
+ background-color: black;
+ color: white;
+}

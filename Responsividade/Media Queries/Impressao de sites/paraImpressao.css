@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/*Estilo para impressora*/
+
+*{
+    margin: 10px;
+    padding: 10px;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+menu{
+    display: none; /*não aparece o menu para imprimir*/
+}
+
+article::after{ /*add essa msg no final do artigo para impressão*/
+    content:'Essa página foi criada no dia 10/05/2026 por Maria Paula';
+}
