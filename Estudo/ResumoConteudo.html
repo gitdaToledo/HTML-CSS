@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova DWEB</title>
+
+    <style>
+        h1, h2{
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: white;
+        }
+
+        body{
+            background-color: darkblue;
+            background-attachment: fixed;
+        }
+
+        section{
+            background-color: white;
+            width: 300px;
+            height: auto;
+            display: block;
+            margin: auto;
+            border-radius: 8px;
+            color: darkblue;
+            padding: 8px;
+        }
+
+       nav > a{
+            color:darkblue;
+            border: 1px solid darkblue;
+            border-radius: 5px;
+            padding: 5px;
+            text-decoration: none;   
+            margin-right: 4px;    
+        }
+
+        nav > a:hover{
+            color: white;
+            background-color: darkblue;
+            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.597);
+        }
+
+        nav{
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        th, td{
+            text-align: center;
+            padding: 5px;        
+        }
+    </style>
+
+</head>
+<body>
+    
+<!--Tags semanticas estão pelo código-->
+
+<header>
+    <h1>Revisão Prova DWEB</h1>
+</header>
+
+<nav>
+    <a href="#listas">Listas</a>
+    <a href="#tabelas">Tabelas</a>
+    <a href="#ancoras">Âncoras</a>
+    <a href="#formularios">Formulários</a>
+</nav>
+<hr>
+    <h2>Listas</h2>
+
+<section id="listas">
+    <h3>Listas ordenadas <code>&lt;ol&gt;</code></h3>
+    <p>Atributo reversed - inverte a ordem da lista</p>
+    <p>Atributo start - determina onde a lista começa</p>
+    <ol>
+        <li>Atributo type="A"</li>
+        <li>Atributo type="a"</li>
+        <li>Atributo type="I"</li>
+        <li>Atributo type="i"</li>
+        <li>Atributo type="1" (padrão)</li>
+    </ol>
+<h3>Lista não ordenada <code>&lt;ul&gt;</code></h3>
+   <ul type="">
+    <li>Atributo type="circle"</li>
+    <li>Atributo type="square"</li>
+   </ul> 
+
+   <h3>Lista de Definições <code>&lt;dl&gt;</code></h3>
+   <dl>
+    <dt>A tag <code>&lt;dt&gt;</code> serve para os termos</dt>
+    <dd>A tag <code>&lt;dd&gt;</code> serve para inserir a descrição do termo</dd>
+     <p>exemplo:</p>
+     <dt>HTML</dt>
+     <dd>Linguagem de marcação</dd>
+   </dl>
+</section>
+
+<br><hr>
+
+<h2>Tabelas</h2>
+<section  id="tabelas">
+    <p>Inicia a tabela - <code>&lt;table&gt;</code></p>
+    <p>Defini uma linha - <code>&lt;tr&gt;</code></p>
+
+    <p><strong>dentro de <code>&lt;tr&gt;</code>: </strong></p>
+
+    <p>Defini uma cédula de cabeçalho - <code>&lt;th&gt;</code></p>
+    <p>Defini uma cédula de dados da tabela - <code>&lt;td&gt;</code></p>
+
+    <p><strong>Atributos:</strong></p>
+    <p>colspan - mescla colunas</p>
+    <p>rowspan - mescla linhas</p>
+
+    <p><strong>Semântica: </strong></p>
+
+    <p>Separa o cabeçalho da tabela - <code>&lt;thead&gt;</code></p>
+    <p>Separa o corpo da tabela - <code>&lt;tbody&gt;</code></p>
+
+<table border="1">
+
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Curso</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Maria</td>
+            <td>18 anos</td>
+            <td>ADS</td>
+        </tr>
+
+        <tr>
+            <td>Paula</td>
+            <td>19 anos</td>
+            <td>Turismo</td>
+        </tr>
+
+        <tr>
+            <td colspan="3">Alunos</td>
+        </tr>
+    </tbody>
+
+</table>
+</section>
+
+<br><hr>
+
+<h2>Âncoras</h2>
+ <!--âncoras tag <a> são utilizadas para navegar entre páginas por meio de links com o atributo href-->
+
+    <!--atributo title quando passa o mouse da uma previa do conteúdo-->
+
+    <!--o atributo target determina onde o arquivo será aberto-->
+    <!-- _blank = abre nova aba -->
+    <!--  -->
+
+<section id="ancoras">
+            <ul>
+                <li>arquivo local:</li>
+                <a href="index.html">menu - assuntos 1°semestre</a>
+                <br><br>
+                <li>arquivo externo: </li>
+                <a href="https://cbt.ifsp.edu.br/" target="_blank">site IFSP campus Cubatão</a>
+                <br><br>
+                <li>âncoras internas</li>
+               <p>no href coloca o id (#id)para navegar em um local da mesma página (ideal para páginas longas)</p>
+                <a href="#listas">listas - <em>só serve para página grande</em></a>
+                <br><br>
+                <li>Email: (mailto: email@exemplo.com)</li>
+                <a href="mailto:maripaulaa6@gmail.com">maripaulaa6@gmail.com</a>
+                <br><br>
+                <li>Telefone: (tel:13XXXXX-XXXX)</li>
+                <a href="tel:13997734217">Ligue para mim</a>
+                <br><br>
+                <li>Mensagem no WhatsApp: (whatsapp://send?phone=13XXXXX-XXXX)</li>
+                <a href="whatsapp://send?phone=13997734217">Conversar no WhatsApp</a>
+    
+            </ul>
+</section>
+
+<br><hr>
+
+<h2>Formulários</h2>
+
+<section id="formularios">
+<label for="nome">Nome:</label>
+<input type="text" name="nome" id="nome">
+
+</section>
+</body>
+</html>
