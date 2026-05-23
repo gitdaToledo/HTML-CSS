@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+/*Todas as outras medias*/
+
+/*Typical device Breakpoints (varia bastante conforme novas tecnologias)
+------------------------------
+Pequenas tela: até 360px
+Celular: de 480px até 640px
+Tablet: de 768 até 1024px
+Desktop: de 1200px até 1440px
+Grandes telas: acima de 1440px
+*/
+
+@media print
+{
+  *{
+  font-family: 'Courier New', Courier, monospace;
+  }
+
+  main{
+    border: 2px solid  black;
+    width: 90vw;
+  }
+
+  main::after{
+    content:'Essa página foi configurada para impressão por Maria Paula Toledo';
+    font-size: 0.5em;
+  }
+    h1{
+        text-shadow: none;
+        color:black;
+    }
+    img#phone{display:none} 
+    img#tablet{display:none;}
+    img#print{display:block;}
+    img#pc {display:none;} 
+    img#tv {display:none;}
+
+}
+/* parte que o mobile first já atendeu
+@media screen and (max-width: 360px)
+{
+
+}
+
+@media screen and (min-width: 360px) and (max-width: 640px)
+{
+
+}
+*/
+
+@media screen and (min-width: 640px) and (max-width: 1024px) /*tablet*/
+{
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#phone{display:none} 
+    img#tablet{display:block;}
+    img#print{display:none;}
+    img#pc {display:none;} 
+    img#tv {display:none;}
+}
+
+@media screen and (min-width:1024px) and (max-width: 1440px)  /*pc*/
+{
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#phone{display:none} 
+    img#tablet{display:none;}
+    img#print{display:none;}
+    img#pc {display:block;} 
+    img#tv {display:none;}
+}
+
+@media screen and (min-width: 1440px)  /*TV*/
+{
+   body{
+    background-image: url(../imagens/back-tv.jpg);
+   }
+
+   img#phone{display:none} 
+    img#tablet{display:none;}
+    img#print{display:none;}
+    img#pc {display:none;} 
+    img#tv {display:block;}
+}
+
