@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition e Trasform</title>
+
+    <style>
+    body{
+        background-color: black;
+    }
+
+    button {
+        background-color: #6369f1;
+        color:#ffff;
+        border: none;
+        border-radius: 8px;
+        padding: 12px 14px;
+        margin: auto;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    button:hover{
+        background-color: #7e8df8;
+        transform: scale(1.05); /*aumenta o tamanho*/
+    }
+
+    .container{
+        width: 300px;
+        background-color: #e0e0e0;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    .item{
+        width: 50px;
+        height:50px;
+        background-color: #6369f1;
+        transition: transform 0.8s;
+    }
+
+    .container:hover .item{
+        transform: translateX(250px) scale(0.8) rotate(45deg); /*quando passar o mouse em item ele se move 200px para o lado, diminui e roda 45°*/
+        
+    }
+
+
+    </style>
+</head>
+<body>
+    <button>Clique aqui</button>
+    <br>
+    <div class="container">
+        <div class="item"></div>
+    </div>
+</body>
+</html>

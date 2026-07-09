@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <title>Projeto Menu</title>
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+    <h1>Meu Site</h1>
+    <span id="burguer" class="material-symbols-outlined" onclick="CliqueMenu()">menu</span>
+    <menu id="itens">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Perfil</a></li>
+            <li><a href="#">Configurações</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </menu>
+    </header>
+
+    <main>
+        <article>
+            <h2>Usando Media Queries</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptates nostrum ducimus quibusdam iusto deserunt earum omnis non architecto adipisci enim, animi facere vel ut laudantium distinctio nesciunt repellat eos?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex porro facere esse quo rem temporibus vitae, at, fugiat vero atque nesciunt placeat sint ullam accusantium similique pariatur excepturi nulla nam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptates nostrum ducimus quibusdam iusto deserunt earum omnis non architecto adipisci enim, animi facere vel ut laudantium distinctio nesciunt repellat eos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis non asperiores id sed culpa sit, debitis excepturi ab esse natus. Saepe adipisci nostrum nulla laborum in praesentium temporibus repellendus facere.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptates nostrum ducimus quibusdam iusto deserunt earum omnis non architecto adipisci enim, animi facere vel ut laudantium distinctio nesciunt repellat eos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, sapiente numquam similique maxime neque laudantium ex delectus autem quidem quas? Officiis magni quaerat illum unde, adipisci aliquam! Corrupti, maiores veniam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptates nostrum ducimus quibusdam iusto deserunt earum omnis non architecto adipisci enim, animi facere vel ut laudantium distinctio nesciunt repellat eos?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, maiores aut! Et quam fugit dolores dolorum excepturi. Reprehenderit eos dolorem delectus. Aperiam dolor ut cumque eos omnis, possimus eveniet ex?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptates nostrum ducimus quibusdam iusto deserunt earum omnis non architecto adipisci enim, animi facere vel ut laudantium distinctio nesciunt repellat eos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, sapiente beatae rerum quo eveniet officiis excepturi fugiat voluptatum facilis qui fugit eum, possimus explicabo impedit adipisci! Ipsum vero rem officia!</p>
+
+        </article>
+    </main>
+
+    <script>
+        function mudouTamanho(){
+            if(window.innerWidth >= 780){
+                itens.style.display = 'block'
+            }
+            else{
+                itens.style.display ='none'
+            }
+        }
+
+    function CliqueMenu(){
+        if(itens.style.display == 'block'){
+            itens.style.display = 'none'
+        }
+        else{
+          itens.style.display = 'block'
+        }
+    }
+    </script>
+</body>
+</html>
