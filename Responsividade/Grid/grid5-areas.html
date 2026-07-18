@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+
+    <style>
+        *{
+            margin:0;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        /*Grid container*/
+        .container{
+            background-color: black;
+            padding: 8px;
+            display: grid;
+            gap: 5px;
+            grid-template: 1fr 2fr 2fr 1fr / repeat(3, 1fr);
+            grid-template-areas: 
+            "header header header"
+            "sidebar main main"
+            "sidebar section content"
+            "footer footer footer";
+        }
+
+        /*Grid Itens*/
+        .item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #header{
+            grid-area: header;
+            background-color: #FFCD0A;
+        }
+
+        #sidebar{
+            grid-area: sidebar;
+            background-color: #65CC9A;
+        }
+
+        #main{
+            grid-area: main;
+            background-color: #FF6769;
+        }
+
+        #section{
+            grid-area: section;
+            background-color: #9999FB;
+        }
+
+        #content{
+            grid-area: content;
+            background-color: #CC99CA;
+        }
+
+        #footer{
+            grid-area: footer;
+            background-color: #66CCFC;
+        }
+
+        @media screen and (max-width: 990px) {
+            .container{
+                height: 600px;
+                grid-template: 10% 30% 10% 30% / 1fr;
+                grid-template-areas:
+                "header"
+                "sidebar"
+                "main"
+                "section"
+                "content"
+                "footer";
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div id="header" class="item">Header</div>
+        <div id="sidebar" class="item">Sidebar</div>
+        <div id="main" class="item">Main</div>
+        <div id="section" class="item">Section</div>
+        <div id="content" class="item">Content</div>
+        <div id="footer" class="item">Footer</div>
+    </div>
+</body>
+</html>

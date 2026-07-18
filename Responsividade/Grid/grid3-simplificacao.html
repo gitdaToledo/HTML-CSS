@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 3 - simplificado</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: lightgreen;
+        }
+
+        .container{
+            background-color: azure;
+            margin: 10px;
+            padding: 20px;
+
+            /*uso de grid*/
+            display: grid;
+            gap: 10px;
+
+            /*propriedades simplificadas do grid*/
+            grid-template: repeat(3, 80px) / 100px 40% 1fr;
+
+            /*alinhamento simplificado do grid*/
+            place-items: normal normal;
+            place-content: normal normal;
+
+            /*tamanho do grid relativo*/
+            grid-auto-rows: 80px;
+            grid-auto-columns: 1fr;
+
+            /*como os itens são posicionados no grid*/
+            grid-auto-flow: column;
+        }
+
+        .item{
+            border: 2px solid rgb(42, 138, 42);
+            padding: 8px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.5s;
+            cursor: pointer;
+        }
+
+        .item:hover{
+            background-color: rgb(42, 138, 42);
+            transform:  rotate(5deg);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+    </div>
+    
+</body>
+</html>
