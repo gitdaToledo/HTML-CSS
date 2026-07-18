@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: lightgreen;
+        }
+
+        .container{
+            background-color: azure;
+            margin: 10px;
+            padding: 20px;
+
+            /*uso de grid*/
+            display: grid;
+            /*grid-template-columns: auto auto auto;
+            grid-template-rows: 100px 100px 100px;*/
+            gap: 10px;
+
+            /*alinhamento do grid
+            align-items: stretch;
+            justify-items: center;
+            align-content: start;
+            justify-content: end;
+            */
+            
+            /*simplificadores do grid container*/
+            grid-auto-rows: 100px;
+            
+            /*align justify ou vertical horizontal*/
+            place-items: strech center; 
+            place-content: start end;
+
+            /*grid-template-columns: repeat(3, 100px);
+            grid-template-rows: repeat(3, 200px);*/
+
+            grid-template: repeat(2, 1fr) / 100px 20% 1fr 1fr
+
+        }
+
+        .item{
+            border: 2px solid rgb(42, 138, 42);
+            padding: 8px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.5s;
+            cursor: pointer;
+        }
+
+        .item:hover{
+            background-color: rgb(42, 138, 42);
+            transform:  rotate(5deg);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+    </div>
+    
+</body>
+</html>

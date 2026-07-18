@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 2</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: lightgreen;
+        }
+
+        .container{
+            background-color: azure;
+            height: 250px;
+            margin: 10px;
+            padding: 20px;
+
+            /*uso de grid*/
+            display: grid;
+            gap: 10px;
+
+            /*propriedades simplificadas do grid*/
+            grid-template: repeat(3, auto) / repeat(3, auto);
+
+            /*alinhamento simplificado do grid*/
+            place-items: start center;
+            place-content: space-between end;
+
+        }
+
+        .item{
+            border: 2px solid rgb(42, 138, 42);
+            padding: 8px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.5s;
+            cursor: pointer;
+        }
+
+        .item:hover{
+            background-color: rgb(42, 138, 42);
+            transform:  rotate(5deg);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+    </div>
+    
+</body>
+</html>
